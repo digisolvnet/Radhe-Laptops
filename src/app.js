@@ -39,8 +39,8 @@ app.use("/api/v1", routes);
 
 // Handle 404 - Not Found Error
 app.all("*", (req, res, next) => {
-  // next(new NotFoundError("Route not exist in server", "app.js file"));
-  next(new NotFoundError("Route not exist in server", "index-BinL3hAv.js file"));
+  next(new NotFoundError("Route not exist in server", "app.js file"));
+  // next(new NotFoundError("Route not exist in server", "index-BinL3hAv.js file"));
 });
 
 // Custom error handling middleware
